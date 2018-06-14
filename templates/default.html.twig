@@ -67,7 +67,7 @@
             {% if theme_config.social.networks | length %}
               <ul class="social list-inline">
                 {% for network in theme_config.social.networks %}
-                  <li class="{% if network == theme_config.social.networks | last %}last-item{% endif %}"><a href="{{ network.url }}"><i class="fa fa-{{ network.icon }}"></i>{{ network.title }}</a></li>
+                  <li class="{% if network == theme_config.social.networks | last %}last-item{% endif %}"><a target="_blank" href="{{ network.url }}"><i class="fa fa-{{ network.icon }}"></i>{{ network.title }}</a></li>
                 {% endfor %}
               </ul>
             {% endif %}
